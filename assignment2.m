@@ -35,7 +35,7 @@ SER=[];
 BER=[];
 BER_revised=[];
 SER_revised=[];
-for sigma=0.1:0.01:0.2
+for sigma=0.1:0.01:1.2
     sigma
     %1.CreatbitSignal
     data_bits_in=rand(symbolNum,4)<0.5;
@@ -87,7 +87,7 @@ end
 %Derivation of the theoretical value
 %
 %**************************************************************************************
-sigma=0.1:0.01:0.2;
+sigma=0.1:0.01:1.2;
 N0=2*(sigma.^2);% En=noise RMS value^2=N0/2 
 
 gain =(2^4-1)*3*d^2/(6*Es*sqrt(2));
